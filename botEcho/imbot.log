@@ -1,0 +1,2065 @@
+
+------------------------
+2022.06.17 14:35:00
+ImBot Event Query
+Array
+(
+    [event] => ONAPPINSTALL
+    [data] => Array
+        (
+            [VERSION] => 1
+            [ACTIVE] => Y
+            [INSTALLED] => Y
+            [LANGUAGE_ID] => ru
+        )
+
+    [ts] => 1655465699
+    [auth] => Array
+        (
+            [access_token] => f474ac62005c1516005bf54a000000010000077ea5afe7631724891829aec846427d8b
+            [expires] => 1655469300
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => e4f3d362005c1516005bf54a000000010000078eba9569a4e66fcb41d215d90bc84a36
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:00
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.register
+    [PARAMS] => Array
+        (
+            [CODE] => echobot
+            [TYPE] => B
+            [EVENT_MESSAGE_ADD] => https://bitrix-test.melalex.ru/botEcho/bot.php
+            [EVENT_WELCOME_MESSAGE] => https://bitrix-test.melalex.ru/botEcho/bot.php
+            [EVENT_BOT_DELETE] => https://bitrix-test.melalex.ru/botEcho/bot.php
+            [OPENLINE] => Y
+            [PROPERTIES] => Array
+                (
+                    [NAME] => EchoBot 1
+                    [COLOR] => GREEN
+                    [EMAIL] => test@test.ru
+                    [PERSONAL_BIRTHDAY] => 2016-03-11
+                    [WORK_POSITION] => My first echo bot
+                    [PERSONAL_WWW] => http://bitrix24.com
+                    [PERSONAL_GENDER] => M
+                    [PERSONAL_PHOTO] => 
+                )
+
+            [auth] => f474ac62005c1516005bf54a000000010000077ea5afe7631724891829aec846427d8b
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:01
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.command.register
+    [PARAMS] => Array
+        (
+            [BOT_ID] => 6
+            [COMMAND] => echo
+            [COMMON] => Y
+            [HIDDEN] => N
+            [EXTRANET_SUPPORT] => N
+            [LANG] => Array
+                (
+                    [0] => Array
+                        (
+                            [LANGUAGE_ID] => en
+                            [TITLE] => Get echo message
+                            [PARAMS] => some text
+                        )
+
+                )
+
+            [EVENT_COMMAND_ADD] => https://bitrix-test.melalex.ru/botEcho/bot.php
+            [auth] => f474ac62005c1516005bf54a000000010000077ea5afe7631724891829aec846427d8b
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:02
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.command.register
+    [PARAMS] => Array
+        (
+            [BOT_ID] => 6
+            [COMMAND] => echoList
+            [COMMON] => N
+            [HIDDEN] => N
+            [EXTRANET_SUPPORT] => N
+            [LANG] => Array
+                (
+                    [0] => Array
+                        (
+                            [LANGUAGE_ID] => en
+                            [TITLE] => Get list of colors
+                            [PARAMS] => 
+                        )
+
+                )
+
+            [EVENT_COMMAND_ADD] => https://bitrix-test.melalex.ru/botEcho/bot.php
+            [auth] => f474ac62005c1516005bf54a000000010000077ea5afe7631724891829aec846427d8b
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:02
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.command.register
+    [PARAMS] => Array
+        (
+            [BOT_ID] => 6
+            [COMMAND] => help
+            [COMMON] => N
+            [HIDDEN] => N
+            [EXTRANET_SUPPORT] => N
+            [LANG] => Array
+                (
+                    [0] => Array
+                        (
+                            [LANGUAGE_ID] => en
+                            [TITLE] => Get help message
+                            [PARAMS] => some text
+                        )
+
+                )
+
+            [EVENT_COMMAND_ADD] => https://bitrix-test.melalex.ru/botEcho/bot.php
+            [auth] => f474ac62005c1516005bf54a000000010000077ea5afe7631724891829aec846427d8b
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:03
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/event.bind
+    [PARAMS] => Array
+        (
+            [EVENT] => OnAppUpdate
+            [HANDLER] => https://bitrix-test.melalex.ru/botEcho/bot.php
+            [auth] => f474ac62005c1516005bf54a000000010000077ea5afe7631724891829aec846427d8b
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:03
+ImBot register
+Array
+(
+    [0] => 6
+    [1] => 24
+    [2] => 28
+    [3] => 26
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:07
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTJOINCHAT
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [CHAT_TYPE] => P
+                    [MESSAGE_TYPE] => P
+                    [BOT_ID] => 6
+                    [USER_ID] => 1
+                    [TO_USER_ID] => 6
+                    [FROM_USER_ID] => 1
+                    [DIALOG_ID] => 1
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                )
+
+        )
+
+    [ts] => 1655465706
+    [auth] => Array
+        (
+            [access_token] => fb74ac62005c1516005bf54a00000001000007708c8e1fc90469a8c8d108e7fd01ec49
+            [expires] => 1655469307
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:07
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 1
+            [MESSAGE] => Welcome message from bot.
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => Private instructions
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => [send=send message]Click for send[/send] or [put=something...]write something[/put]
+                        )
+
+                )
+
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Help
+                            [COMMAND] => help
+                        )
+
+                )
+
+            [auth] => fb74ac62005c1516005bf54a00000001000007708c8e1fc90469a8c8d108e7fd01ec49
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:07
+ImBot Event join chat
+Array
+(
+    [result] => 6
+    [time] => Array
+        (
+            [start] => 1655465707.3297
+            [finish] => 1655465707.6366
+            [duration] => 0.30684614181519
+            [processing] => 0.16007494926453
+            [date_start] => 2022-06-17T14:35:07+03:00
+            [date_finish] => 2022-06-17T14:35:07+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:11
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_USER_ID] => 6
+                    [MESSAGE] => send message
+                    [TEMPLATE_ID] => temp0
+                    [MESSAGE_TYPE] => P
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 1
+                    [CHAT_ID] => 6
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [DIALOG_ID] => 1
+                    [MESSAGE_ID] => 8
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1655465710
+    [auth] => Array
+        (
+            [access_token] => fe74ac62005c1516005bf54a00000001000007a4493c175ab0c22f14d2aeb607b2911b
+            [expires] => 1655469310
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => eef3d362005c1516005bf54a00000001000007998770e3bd6f2fb429cffc68db03fc21
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:11
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 1
+            [MESSAGE] => Message from bot
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => reply: send message
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => latency: 1s
+                        )
+
+                )
+
+            [auth] => fe74ac62005c1516005bf54a00000001000007a4493c175ab0c22f14d2aeb607b2911b
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:11
+ImBot Event message add
+Array
+(
+    [result] => 10
+    [time] => Array
+        (
+            [start] => 1655465711.7716
+            [finish] => 1655465711.9676
+            [duration] => 0.19607496261597
+            [processing] => 0.051085948944092
+            [date_start] => 2022-06-17T14:35:11+03:00
+            [date_finish] => 2022-06-17T14:35:11+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:28
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTJOINCHAT
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [CHAT_TYPE] => C
+                    [MESSAGE_TYPE] => C
+                    [BOT_ID] => 6
+                    [USER_ID] => 1
+                    [CHAT_AUTHOR_ID] => 1
+                    [CHAT_ENTITY_TYPE] => 
+                    [CHAT_ENTITY_ID] => 
+                    [ACCESS_HISTORY] => 1
+                    [DIALOG_ID] => chat8
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                )
+
+        )
+
+    [ts] => 1655465727
+    [auth] => Array
+        (
+            [access_token] => 0f75ac62005c1516005bf54a00000001000007894ea4426b984c4645a53b64b3fdd4f5
+            [expires] => 1655469327
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:28
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => chat8
+            [MESSAGE] => Welcome message from bot.
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => Chat instructions
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => [send=send message]click for send[/send] or [put=put message to textarea]click for put[/put]
+                        )
+
+                )
+
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Help
+                            [COMMAND] => help
+                        )
+
+                )
+
+            [auth] => 0f75ac62005c1516005bf54a00000001000007894ea4426b984c4645a53b64b3fdd4f5
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:35:28
+ImBot Event join chat
+Array
+(
+    [result] => 16
+    [time] => Array
+        (
+            [start] => 1655465728.5024
+            [finish] => 1655465728.6928
+            [duration] => 0.19045805931091
+            [processing] => 0.046327829360962
+            [date_start] => 2022-06-17T14:35:28+03:00
+            [date_finish] => 2022-06-17T14:35:28+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:37:24
+ImBot Event Query
+Array
+(
+    [event] => ONIMCOMMANDADD
+    [data] => Array
+        (
+            [COMMAND] => Array
+                (
+                    [28] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                            [COMMAND] => help
+                            [COMMAND_ID] => 28
+                            [COMMAND_PARAMS] => 
+                            [COMMAND_CONTEXT] => KEYBOARD
+                            [MESSAGE_ID] => 16
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_CHAT_ID] => 8
+                    [MESSAGE] => /help 
+                    [MESSAGE_TYPE] => C
+                    [AUTHOR_ID] => 1
+                    [CHAT_ENTITY_TYPE] => 
+                    [CHAT_ENTITY_ID] => 
+                    [DIALOG_ID] => chat8
+                    [MESSAGE_ID] => 16
+                    [CHAT_TYPE] => C
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                )
+
+        )
+
+    [ts] => 1655465844
+    [auth] => Array
+        (
+            [access_token] => 8475ac62005c1516005bf54a0000000100000768313c91d63ab86fbe4eee8688f22107
+            [expires] => 1655469444
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => 74f4d362005c1516005bf54a00000001000007c45e09215340e11b4055f62fe4237756
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:37:24
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 28
+            [MESSAGE_ID] => 16
+            [MESSAGE] => Hello! My name is EchoBot :)[br] I designed to answer your questions!
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Bitrix24
+                            [LINK] => http://bitrix24.com
+                            [BG_COLOR] => #29619b
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => BitBucket
+                            [LINK] => https://bitbucket.org/Bitrix24com/rest-bot-echotest
+                            [BG_COLOR] => #2a4c7c
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [2] => Array
+                        (
+                            [TYPE] => NEWLINE
+                        )
+
+                    [3] => Array
+                        (
+                            [TEXT] => Echo
+                            [COMMAND] => echo
+                            [COMMAND_PARAMS] => test from keyboard
+                            [DISPLAY] => LINE
+                        )
+
+                    [4] => Array
+                        (
+                            [TEXT] => List
+                            [COMMAND] => echoList
+                            [DISPLAY] => LINE
+                        )
+
+                    [5] => Array
+                        (
+                            [TEXT] => Help
+                            [COMMAND] => help
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
+            [auth] => 8475ac62005c1516005bf54a0000000100000768313c91d63ab86fbe4eee8688f22107
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:37:25
+ImBot Event message add
+Array
+(
+    [result] => 20
+    [time] => Array
+        (
+            [start] => 1655465844.9604
+            [finish] => 1655465845.1964
+            [duration] => 0.23596501350403
+            [processing] => 0.043413877487183
+            [date_start] => 2022-06-17T14:37:24+03:00
+            [date_finish] => 2022-06-17T14:37:25+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:39:16
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_USER_ID] => 6
+                    [MESSAGE] => fdgb
+                    [TEMPLATE_ID] => temp3
+                    [MESSAGE_TYPE] => P
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 1
+                    [CHAT_ID] => 6
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [DIALOG_ID] => 1
+                    [MESSAGE_ID] => 24
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1655465956
+    [auth] => Array
+        (
+            [access_token] => f475ac62005c1516005bf54a00000001000007c4721d49f0b0117c1d032eb6538c9937
+            [expires] => 1655469556
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => e4f4d362005c1516005bf54a00000001000007edee2466adfac0411c06d811d6126f32
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:39:16
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 1
+            [MESSAGE] => Message from bot
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => reply: fdgb
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => latency: 0s
+                        )
+
+                )
+
+            [auth] => f475ac62005c1516005bf54a00000001000007c4721d49f0b0117c1d032eb6538c9937
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:39:16
+ImBot Event message add
+Array
+(
+    [result] => 26
+    [time] => Array
+        (
+            [start] => 1655465956.3996
+            [finish] => 1655465956.5823
+            [duration] => 0.18268299102783
+            [processing] => 0.039460897445679
+            [date_start] => 2022-06-17T14:39:16+03:00
+            [date_finish] => 2022-06-17T14:39:16+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:39:32
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_CHAT_ID] => 8
+                    [MESSAGE] => fg
+                    [SILENT_CONNECTOR] => N
+                    [TEMPLATE_ID] => temp5
+                    [MESSAGE_TYPE] => C
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [AUTHOR_ID] => 1
+                    [CHAT_ID] => 8
+                    [CHAT_AUTHOR_ID] => 1
+                    [CHAT_ENTITY_TYPE] => 
+                    [CHAT_ENTITY_ID] => 
+                    [CHAT_ENTITY_DATA_1] => 
+                    [CHAT_ENTITY_DATA_2] => 
+                    [CHAT_ENTITY_DATA_3] => 
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ORIGINAL] => [USER=6]EchoBot 1[/USER] fg
+                    [TO_USER_ID] => 6
+                    [DIALOG_ID] => chat8
+                    [MESSAGE_ID] => 30
+                    [CHAT_TYPE] => C
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1655465972
+    [auth] => Array
+        (
+            [access_token] => 0476ac62005c1516005bf54a000000010000076b7bb552a329d56d35df6ca8e81a39b3
+            [expires] => 1655469572
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => f4f4d362005c1516005bf54a00000001000007b9619022345ac66216db6c6f50899b20
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:39:32
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => chat8
+            [MESSAGE] => Message from bot
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => reply: fg
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => latency: 0s
+                        )
+
+                )
+
+            [auth] => 0476ac62005c1516005bf54a000000010000076b7bb552a329d56d35df6ca8e81a39b3
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:39:33
+ImBot Event message add
+Array
+(
+    [result] => 32
+    [time] => Array
+        (
+            [start] => 1655465973.0613
+            [finish] => 1655465973.229
+            [duration] => 0.1677029132843
+            [processing] => 0.039245843887329
+            [date_start] => 2022-06-17T14:39:33+03:00
+            [date_finish] => 2022-06-17T14:39:33+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:40:56
+ImBot Event Query
+Array
+(
+    [event] => ONIMCOMMANDADD
+    [data] => Array
+        (
+            [COMMAND] => Array
+                (
+                    [28] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                            [COMMAND] => help
+                            [COMMAND_ID] => 28
+                            [COMMAND_PARAMS] => 
+                            [COMMAND_CONTEXT] => KEYBOARD
+                            [MESSAGE_ID] => 16
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_CHAT_ID] => 8
+                    [MESSAGE] => /help 
+                    [MESSAGE_TYPE] => C
+                    [AUTHOR_ID] => 1
+                    [CHAT_ENTITY_TYPE] => 
+                    [CHAT_ENTITY_ID] => 
+                    [DIALOG_ID] => chat8
+                    [MESSAGE_ID] => 16
+                    [CHAT_TYPE] => C
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                )
+
+        )
+
+    [ts] => 1655466056
+    [auth] => Array
+        (
+            [access_token] => 5876ac62005c1516005bf54a000000010000073fa2ad6546a363d611d103fe8a54e77f
+            [expires] => 1655469656
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => 48f5d362005c1516005bf54a000000010000071d9c6678e3333a81caef584be3e5bdde
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:40:56
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 28
+            [MESSAGE_ID] => 16
+            [MESSAGE] => Hello! My name is EchoBot :)[br] I designed to answer your questions!
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Bitrix24
+                            [LINK] => http://bitrix24.com
+                            [BG_COLOR] => #29619b
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => BitBucket
+                            [LINK] => https://bitbucket.org/Bitrix24com/rest-bot-echotest
+                            [BG_COLOR] => #2a4c7c
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [2] => Array
+                        (
+                            [TYPE] => NEWLINE
+                        )
+
+                    [3] => Array
+                        (
+                            [TEXT] => Echo
+                            [COMMAND] => echo
+                            [COMMAND_PARAMS] => test from keyboard
+                            [DISPLAY] => LINE
+                        )
+
+                    [4] => Array
+                        (
+                            [TEXT] => List
+                            [COMMAND] => echoList
+                            [DISPLAY] => LINE
+                        )
+
+                    [5] => Array
+                        (
+                            [TEXT] => Help
+                            [COMMAND] => help
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
+            [auth] => 5876ac62005c1516005bf54a000000010000073fa2ad6546a363d611d103fe8a54e77f
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:40:57
+ImBot Event message add
+Array
+(
+    [result] => 34
+    [time] => Array
+        (
+            [start] => 1655466056.8711
+            [finish] => 1655466057.0586
+            [duration] => 0.18754696846008
+            [processing] => 0.054536104202271
+            [date_start] => 2022-06-17T14:40:56+03:00
+            [date_finish] => 2022-06-17T14:40:57+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:52:51
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_USER_ID] => 6
+                    [MESSAGE] => add
+                    [TEMPLATE_ID] => temp7
+                    [MESSAGE_TYPE] => P
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 1
+                    [CHAT_ID] => 6
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [DIALOG_ID] => 1
+                    [MESSAGE_ID] => 38
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1655466771
+    [auth] => Array
+        (
+            [access_token] => 2379ac62005c1516005bf54a000000010000070185289c318c31e7db42b8c82769bcd0
+            [expires] => 1655470371
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => 13f8d362005c1516005bf54a000000010000077bf50d0b49db1cef5021b4b3eb1f9628
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:52:51
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.app.register
+    [PARAMS] => Array
+        (
+            [BOT_ID] => 12
+            [CODE] => space2
+            [IFRAME] => https://bitrix-test.melalex.ru/botEcho/iframe.php
+            [IFRAME_WIDTH] => 250
+            [IFRAME_HEIGHT] => 350
+            [HASH] => d1ab17949a572b0979d8db0d5b349cd2
+            [ICON_FILE] => iVBORw0KGgoAAAANSUhEUgAAAGwAAABCCAYAAACywDOLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBQTQyM0JCODQwMjA2ODExODIyQTgxNjI5RDU0MTQ2OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBQTBGMDNGMEQ4MTQxMUVDQjVCRThDM0NCOEE0MEI4MyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBQTBGMDNFRkQ4MTQxMUVDQjVCRThDM0NCOEE0MEI4MyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDQ3QjEyRUExNTIyNjgxMTgyMkE4MTYyOUQ1NDE0NjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUE0MjNCQjg0MDIwNjgxMTgyMkE4MTYyOUQ1NDE0NjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6LnNOQAAABS0lEQVR42uzcMUoDQRSHcVcsbL2JYGOvAQsPlCN4Bq9ga2GhvU3AE+QcduMKKYLIGjZ5mXnj74NhCewW//nm7bwhsEMp5QR5ODUFhIEwEEYYCANhhIEwEEYYCANhhIEwEEYYWuFs7oPPL28Rf1UP2z/u726OPiGX75/huT6uz1WYCpu5emZSflyHBuamyVwqTNNxEMrWquyJvXOpsH+4h0XsF71U18FzRQl7GMfVjvcux7FKIqB6rihh36Fud7z3IlHFVM8VvYctN6+FqfGa8FVXLZemQ1sPwkCYc9jv/NVRPY1jnXDequU6hrCpcKvEwqrkihb2uFltU8EyUi1XtLB10nNWs7k0HbpEEAbCCANhICw9UeewRafztVBhIIwwdLWH9fr9vqLCsDeDD1zaw0AYCCMMhIEwwkAYCCMMhIEwwkAYCCMMrfAlwAD8AzH3fvKdJwAAAABJRU5ErkJggg==
+            [CONTEXT] => ALL
+            [HIDDEN] => N
+            [EXTRANET_SUPPORT] => N
+            [LIVECHAT_SUPPORT] => N
+            [IFRAME_POPUP] => N
+            [LANG] => Array
+                (
+                    [0] => Array
+                        (
+                            [LANGUAGE_ID] => ru
+                            [TITLE] => Echobot IFRAME
+                            [DESCRIPTION] => Open Echobot IFRAME app
+                            [COPYRIGHT] => Bitrix24
+                        )
+
+                )
+
+            [auth] => 2379ac62005c1516005bf54a000000010000070185289c318c31e7db42b8c82769bcd0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:52:52
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 1
+            [MESSAGE] => Message from bot
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => reply: Array
+(
+    [error] => BOT_ID_ERROR
+    [error_description] => Bot not found
+)
+
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => latency: 0s
+                        )
+
+                )
+
+            [auth] => 2379ac62005c1516005bf54a000000010000070185289c318c31e7db42b8c82769bcd0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 14:52:52
+ImBot Event message add
+Array
+(
+    [result] => 40
+    [time] => Array
+        (
+            [start] => 1655466772.2613
+            [finish] => 1655466772.3545
+            [duration] => 0.093204975128174
+            [processing] => 0.051018953323364
+            [date_start] => 2022-06-17T14:52:52+03:00
+            [date_finish] => 2022-06-17T14:52:52+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:03:01
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_USER_ID] => 6
+                    [MESSAGE] => add
+                    [TEMPLATE_ID] => temp8
+                    [MESSAGE_TYPE] => P
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 1
+                    [CHAT_ID] => 6
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [DIALOG_ID] => 1
+                    [MESSAGE_ID] => 42
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1655467380
+    [auth] => Array
+        (
+            [access_token] => 857bac62005c1516005bf54a00000001000007887e79b7535156765eb5452c3c5371d9
+            [expires] => 1655470981
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => 75fad362005c1516005bf54a0000000100000711dffd915f10238d084c4ea03b0f5ab4
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:03:01
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.app.register
+    [PARAMS] => Array
+        (
+            [BOT_ID] => 6
+            [CODE] => space2
+            [IFRAME] => https://bitrix-test.melalex.ru/botEcho/iframe.php
+            [IFRAME_WIDTH] => 250
+            [IFRAME_HEIGHT] => 350
+            [HASH] => d1ab17949a572b0979d8db0d5b349cd2
+            [ICON_FILE] => iVBORw0KGgoAAAANSUhEUgAAAGwAAABCCAYAAACywDOLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBQTQyM0JCODQwMjA2ODExODIyQTgxNjI5RDU0MTQ2OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBQTBGMDNGMEQ4MTQxMUVDQjVCRThDM0NCOEE0MEI4MyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBQTBGMDNFRkQ4MTQxMUVDQjVCRThDM0NCOEE0MEI4MyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDQ3QjEyRUExNTIyNjgxMTgyMkE4MTYyOUQ1NDE0NjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUE0MjNCQjg0MDIwNjgxMTgyMkE4MTYyOUQ1NDE0NjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6LnNOQAAABS0lEQVR42uzcMUoDQRSHcVcsbL2JYGOvAQsPlCN4Bq9ga2GhvU3AE+QcduMKKYLIGjZ5mXnj74NhCewW//nm7bwhsEMp5QR5ODUFhIEwEEYYCANhhIEwEEYYCANhhIEwEEYYWuFs7oPPL28Rf1UP2z/u726OPiGX75/huT6uz1WYCpu5emZSflyHBuamyVwqTNNxEMrWquyJvXOpsH+4h0XsF71U18FzRQl7GMfVjvcux7FKIqB6rihh36Fud7z3IlHFVM8VvYctN6+FqfGa8FVXLZemQ1sPwkCYc9jv/NVRPY1jnXDequU6hrCpcKvEwqrkihb2uFltU8EyUi1XtLB10nNWs7k0HbpEEAbCCANhICw9UeewRafztVBhIIwwdLWH9fr9vqLCsDeDD1zaw0AYCCMMhIEwwkAYCCMMhIEwwkAYCCMMrfAlwAD8AzH3fvKdJwAAAABJRU5ErkJggg==
+            [CONTEXT] => ALL
+            [HIDDEN] => N
+            [EXTRANET_SUPPORT] => N
+            [LIVECHAT_SUPPORT] => N
+            [IFRAME_POPUP] => N
+            [LANG] => Array
+                (
+                    [0] => Array
+                        (
+                            [LANGUAGE_ID] => ru
+                            [TITLE] => Echobot IFRAME
+                            [DESCRIPTION] => Open Echobot IFRAME app
+                            [COPYRIGHT] => Bitrix24
+                        )
+
+                )
+
+            [auth] => 857bac62005c1516005bf54a00000001000007887e79b7535156765eb5452c3c5371d9
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:03:02
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 1
+            [MESSAGE] => Message from bot
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => reply: Array
+(
+    [result] => 8
+    [time] => Array
+        (
+            [start] => 1655467381.5698
+            [finish] => 1655467382.037
+            [duration] => 0.46724605560303
+            [processing] => 0.22593116760254
+            [date_start] => 2022-06-17T15:03:01+03:00
+            [date_finish] => 2022-06-17T15:03:02+03:00
+            [operating] => 0
+        )
+
+)
+
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => latency: 1s
+                        )
+
+                )
+
+            [auth] => 857bac62005c1516005bf54a00000001000007887e79b7535156765eb5452c3c5371d9
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:03:02
+ImBot Event message add
+Array
+(
+    [result] => 44
+    [time] => Array
+        (
+            [start] => 1655467382.1672
+            [finish] => 1655467382.2453
+            [duration] => 0.078058958053589
+            [processing] => 0.043755769729614
+            [date_start] => 2022-06-17T15:03:02+03:00
+            [date_finish] => 2022-06-17T15:03:02+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:03:28
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_USER_ID] => 6
+                    [MESSAGE] => 😁
+                    [TEMPLATE_ID] => temp9
+                    [MESSAGE_TYPE] => P
+                    [PARAMS] => Array
+                        (
+                            [LARGE_FONT] => Y
+                        )
+
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 1
+                    [CHAT_ID] => 6
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [DIALOG_ID] => 1
+                    [MESSAGE_ID] => 46
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1655467408
+    [auth] => Array
+        (
+            [access_token] => a07bac62005c1516005bf54a000000010000070ec506c46d2d4fabe27c0d430cc8e50d
+            [expires] => 1655471008
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => 90fad362005c1516005bf54a000000010000076a26148553f37ff218206f96ea453af4
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:03:28
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 1
+            [MESSAGE] => Message from bot
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => reply: 😁
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => latency: 0s
+                        )
+
+                )
+
+            [auth] => a07bac62005c1516005bf54a000000010000070ec506c46d2d4fabe27c0d430cc8e50d
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:03:29
+ImBot Event message add
+Array
+(
+    [result] => 48
+    [time] => Array
+        (
+            [start] => 1655467408.949
+            [finish] => 1655467409.117
+            [duration] => 0.16807508468628
+            [processing] => 0.040528059005737
+            [date_start] => 2022-06-17T15:03:28+03:00
+            [date_finish] => 2022-06-17T15:03:29+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:06:59
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_USER_ID] => 6
+                    [MESSAGE] => update
+                    [TEMPLATE_ID] => temp12
+                    [MESSAGE_TYPE] => P
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 1
+                    [CHAT_ID] => 6
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [DIALOG_ID] => 1
+                    [MESSAGE_ID] => 54
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1655467618
+    [auth] => Array
+        (
+            [access_token] => 737cac62005c1516005bf54a00000001000007b2bd1e4af8c86cafa3d5e2bfae4165b0
+            [expires] => 1655471219
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => 63fbd362005c1516005bf54a00000001000007d1fbdbdedebce1817331535285a6adfd
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:06:59
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.app.update
+    [PARAMS] => Array
+        (
+            [APP_ID] => 8
+            [FIELDS] => Array
+                (
+                    [IFRAME] => https://bitrix-test.melalex.ru/botEcho/iframe.php
+                    [IFRAME_WIDTH] => 250
+                    [IFRAME_HEIGHT] => 350
+                    [HASH] => d1ab17949a572b0979d8db0d5b349cd2
+                    [ICON_FILE] => iVBORw0KGgoAAAANSUhEUgAAAGwAAABCCAYAAACywDOLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBQTQyM0JCODQwMjA2ODExODIyQTgxNjI5RDU0MTQ2OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBQTBGMDNGMEQ4MTQxMUVDQjVCRThDM0NCOEE0MEI4MyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBQTBGMDNFRkQ4MTQxMUVDQjVCRThDM0NCOEE0MEI4MyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDQ3QjEyRUExNTIyNjgxMTgyMkE4MTYyOUQ1NDE0NjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUE0MjNCQjg0MDIwNjgxMTgyMkE4MTYyOUQ1NDE0NjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6LnNOQAAABS0lEQVR42uzcMUoDQRSHcVcsbL2JYGOvAQsPlCN4Bq9ga2GhvU3AE+QcduMKKYLIGjZ5mXnj74NhCewW//nm7bwhsEMp5QR5ODUFhIEwEEYYCANhhIEwEEYYCANhhIEwEEYYWuFs7oPPL28Rf1UP2z/u726OPiGX75/huT6uz1WYCpu5emZSflyHBuamyVwqTNNxEMrWquyJvXOpsH+4h0XsF71U18FzRQl7GMfVjvcux7FKIqB6rihh36Fud7z3IlHFVM8VvYctN6+FqfGa8FVXLZemQ1sPwkCYc9jv/NVRPY1jnXDequU6hrCpcKvEwqrkihb2uFltU8EyUi1XtLB10nNWs7k0HbpEEAbCCANhICw9UeewRafztVBhIIwwdLWH9fr9vqLCsDeDD1zaw0AYCCMMhIEwwkAYCCMMhIEwwkAYCCMMrfAlwAD8AzH3fvKdJwAAAABJRU5ErkJggg==
+                    [CONTEXT] => ALL
+                    [EXTRANET_SUPPORT] => N
+                    [LIVECHAT_SUPPORT] => N
+                    [IFRAME_POPUP] => N
+                    [LANG] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [LANGUAGE_ID] => ru
+                                    [TITLE] => Смайлики от СТЕК
+                                    [DESCRIPTION] => Набор смайликов от компании "СТЕК"
+                                    [COPYRIGHT] => STEK
+                                )
+
+                        )
+
+                )
+
+            [auth] => 737cac62005c1516005bf54a00000001000007b2bd1e4af8c86cafa3d5e2bfae4165b0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:06:59
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 1
+            [MESSAGE] => Message from bot
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => reply: Array
+(
+    [result] => 1
+    [time] => Array
+        (
+            [start] => 1655467619.34
+            [finish] => 1655467619.7136
+            [duration] => 0.37362909317017
+            [processing] => 0.21079707145691
+            [date_start] => 2022-06-17T15:06:59+03:00
+            [date_finish] => 2022-06-17T15:06:59+03:00
+            [operating] => 0
+        )
+
+)
+
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => latency: 1s
+                        )
+
+                )
+
+            [auth] => 737cac62005c1516005bf54a00000001000007b2bd1e4af8c86cafa3d5e2bfae4165b0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:06:59
+ImBot Event message add
+Array
+(
+    [result] => 56
+    [time] => Array
+        (
+            [start] => 1655467619.8397
+            [finish] => 1655467619.9154
+            [duration] => 0.075723886489868
+            [processing] => 0.041110992431641
+            [date_start] => 2022-06-17T15:06:59+03:00
+            [date_finish] => 2022-06-17T15:06:59+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:07:20
+ImBot Event Query
+Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [6] => Array
+                        (
+                            [domain] => b24-eyd8i1.bitrix24.ru
+                            [member_id] => 014227534a30e7526cf4ef1431bec832
+                            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                            [AUTH] => Array
+                                (
+                                    [domain] => b24-eyd8i1.bitrix24.ru
+                                    [member_id] => 014227534a30e7526cf4ef1431bec832
+                                    [application_token] => b86ad5f17f12b20fd804b56d6641b906
+                                )
+
+                            [BOT_ID] => 6
+                            [BOT_CODE] => echobot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [FROM_USER_ID] => 1
+                    [TO_USER_ID] => 6
+                    [MESSAGE] => ☹
+                    [TEMPLATE_ID] => temp13
+                    [MESSAGE_TYPE] => P
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 1
+                    [CHAT_ID] => 6
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [DIALOG_ID] => 1
+                    [MESSAGE_ID] => 58
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 1
+                    [NAME] => yanomi6401@game4hr.com
+                    [FIRST_NAME] => yanomi6401@game4hr.com
+                    [LAST_NAME] => 
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1655467639
+    [auth] => Array
+        (
+            [access_token] => 877cac62005c1516005bf54a0000000100000768e618eb07a627aade31498591a44f6f
+            [expires] => 1655471239
+            [expires_in] => 3600
+            [scope] => task,tasks_extended,imopenlines,imbot
+            [domain] => b24-eyd8i1.bitrix24.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://b24-eyd8i1.bitrix24.ru/rest/
+            [member_id] => 014227534a30e7526cf4ef1431bec832
+            [user_id] => 1
+            [refresh_token] => 77fbd362005c1516005bf54a00000001000007084573e4e52e28cd6f47d584b8bf3ef0
+            [application_token] => b86ad5f17f12b20fd804b56d6641b906
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:07:20
+ImBot send data
+Array
+(
+    [URL] => https://b24-eyd8i1.bitrix24.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 1
+            [MESSAGE] => Message from bot
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => reply: ☹
+                        )
+
+                    [1] => Array
+                        (
+                            [MESSAGE] => latency: 1s
+                        )
+
+                )
+
+            [auth] => 877cac62005c1516005bf54a0000000100000768e618eb07a627aade31498591a44f6f
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.06.17 15:07:20
+ImBot Event message add
+Array
+(
+    [result] => 60
+    [time] => Array
+        (
+            [start] => 1655467640.2528
+            [finish] => 1655467640.455
+            [duration] => 0.20214319229126
+            [processing] => 0.060381889343262
+            [date_start] => 2022-06-17T15:07:20+03:00
+            [date_finish] => 2022-06-17T15:07:20+03:00
+            [operating] => 0
+        )
+
+)
+
+------------------------
