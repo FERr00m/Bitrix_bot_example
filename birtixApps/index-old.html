@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bitrix24 app tutorial</title>
+  <!-- подключаем библиотеку BX24 -->
+  <script src="https://api.bitrix24.com/api/v1/"></script>
+</head>
+<body>
+<input type="file" id="testfile"><br />
+<span id="send">send file from input</span><br />
+<span id="get">send static file</span><br />
+<script>
+  /**
+   * передаем методу  `init` в качестве параметра callback-функцию
+   * - наше приложение
+   */
+  BX24.init(function () {
+    function app() {
+      const initDate = BX24.getAuth();
+      console.log("ititDate: ", initDate);
+      console.log(BX24.isAdmin())
+
+      BX24.callMethod('user.get', {sort:'ID',order:'ASC'}, function(result){
+        if(result.error())
+        {
+          alert('Ошибка запроса: ' + result.error());
+        }
+        else
+        {
+          console.log(result.data());
+          if(result.more())
+            result.next();
+        }
+      });
+
+
+    }
+    function sendInputFile()
+    {
+      BX24.callMethod('entity.item.add', {
+        'ENTITY': 'menu',
+        'NAME': Math.random(),
+        'DETAIL_PICTURE': document.getElementById('testfile')
+      }, function(){
+        alert('Finished!');
+      });
+    }
+    /*
+    POST https://my.bitrix24.com/rest/entity.item.add.json HTTP/1.1
+    Host: my.bitrix24.com
+    Content-Length: 186
+    Content-Type: text/plain; charset=UTF-8
+
+    auth=6a8c365cb010ba42bd5b0f6ae803f47c&ENTITY=menu&NAME=0.2630483947652045&DETAIL_PICTURE[0]=1.gif&DETAIL_PICTURE[1]=R0lGODlhAQABAIAAAP%2F%2F%2FwAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D
+    */
+
+    function sendStaticFile()
+    {
+      BX24.callMethod('entity.item.add', {
+        'ENTITY': 'menu',
+        'NAME': '1.gif',
+        'DETAIL_PICTURE': ['1.gif', 'R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==']
+      }, function(){
+        alert('Finished!');
+      });
+    }
+    app();
+
+    let send = document.getElementById('send')
+    send.addEventListener('click', function () {
+      BX24.callMethod('pull.application.config.get', {
+        'CACHE': 'Y',
+      }, function(result){
+        if(result.error())
+        {
+          console.error(result.error().ex);
+        }
+        else
+        {
+          console.log(result.data());
+        }
+      });
+    })
+
+    let get = document.getElementById('get')
+    get.addEventListener('click', function () {
+      BX24.callMethod('log.blogpost.add', {POST_MESSAGE: 'Hello, world!'}, function(r){
+        if(!r.error())
+        {
+          alert('OK!');
+        }
+        else
+        {
+          throw r.error();
+        }
+      });
+      // BX24.callMethod('pull.application.event.add', {
+      //   'COMMAND': 'test',
+      //   'PARAMS': '{"param1":"value1"}',
+      // }, function(result){
+      //   if(result.error())
+      //   {
+      //     console.error(result.error().ex);
+      //   }
+      //   else
+      //   {
+      //     console.log(result.data());
+      //   }
+      // });
+    })
+  });
+
+
+</script>
+</body>
+</html>

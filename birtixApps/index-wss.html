@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bitri24 application with Push & Pull</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script src="//api.bitrix24.com/api/v1/"></script>
+  <script src="//api.bitrix24.com/api/v1/pull/"></script>
+  <style>
+    .active {
+      background-color: #00a2df;
+    }
+  </style>
+</head>
+<body>
+<form id="form">
+  <input type="text" id="input" placeholder="напишите сообщение">
+  <button type="submit">отправить</button>
+</form>
+
+<h4>Сообщения</h4>
+<p id="result"></p>
+<script>
+
+  let user;
+
+  function call(e) {
+    //console.log(e.target.value)
+    BX24.callMethod('pull.application.event.add', {
+      'COMMAND': 'input',
+      'PARAMS': `{
+      "param1":"${e.target.value}",
+      "from_user":"${user.ID}"
+      }`
+    }, function(result){
+      if(result.error())
+      {
+        console.error(result.error().ex);
+      }
+      else
+      {
+        console.log(result.data());
+      }
+    });
+  }
+  let input = document.getElementById('input')
+  let form = document.getElementById('form')
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault()
+    BX24.callMethod('pull.application.event.add', {
+      'COMMAND': 'input',
+      'PARAMS': {
+      "message":`${input.value}`,
+      "from_user_name":`${user.NAME}`,
+      "from_user_id":`${user.ID}`
+      }
+    }, function(result){
+      if(result.error())
+      {
+        console.error(result.error().ex);
+      }
+      else
+      {
+        console.log(result.data());
+      }
+    });
+  })
+  //input.addEventListener('input', call)
+
+  BX24.callBatch({
+    get_user: ['user.current', {}],
+    //get_server_info: ['pull.application.config.get', {'CACHE': 'Y'}],
+    get_server_info: {
+      method: 'pull.application.config.get',
+      params: {
+        CACHE: 'Y'
+      }
+    }
+  }, function(result)
+  {
+    user = result.get_user.data()
+    let server = result.get_server_info.data()
+    console.log(user.ID)
+    console.log(server)
+    window.appPullClient = new BX.PullClient({
+      restApplication: 'myApplication_test.bitrix24.ru',
+      restClient: BX24,
+      userId: user.ID
+    });
+    console.log(2)
+    window.appPullClient.subscribe({
+      moduleId: 'application',
+      callback: function (data) {
+        document.getElementById('result').innerHTML += `<p class="${data.params.from_user_id === user.ID ? 'active' : ''}">${data.params.from_user_name}: ${data.params.message}</p><br>`;
+
+        console.warn(data); // {command: '...', params: {...}, extra: {...}}
+      }.bind(this)
+    });
+    console.log(3)
+    window.appPullClient.start();
+
+    const webSocketFullPath = {
+      url: server.server.websocket_secure,
+      channel: server.channels.private.id + '/' + server.channels.shared.id
+    }
+    console.log(BX24.callMethod('events', {}, function (res) {
+      console.log(res)
+    }))
+    // let socket = new WebSocket(`${webSocketFullPath.url}?CHANNEL_ID=${webSocketFullPath.channel}&format=json`);
+    //
+    // socket.onopen = function(e) {
+    //   alert("[open] Соединение установлено");
+    //   console.log(e)
+    //   // alert("Отправляем данные на сервер");
+    //   // socket.send("Меня зовут Джон");
+    // };
+    // socket.onmessage = function(event) {
+    //   console.log(event.data)
+    //   // console.log(event.data.replace(/#!NGINXNMS!#|#!NGINXNME!#/g, ''))
+    //   // console.log(event.data.split(/#!NGINXNMS!#/g))
+    //   //alert(`[message] Данные получены с сервера: ${event.data}`);
+    // };
+    //
+    // socket.onclose = function(event) {
+    //   if (event.wasClean) {
+    //     alert(`[close] Соединение закрыто чисто, код=${event.code} причина=${event.reason}`);
+    //   } else {
+    //     // например, сервер убил процесс или сеть недоступна
+    //     // обычно в этом случае event.code 1006
+    //     alert('[close] Соединение прервано');
+    //   }
+    // };
+    //
+    // socket.onerror = function(error) {
+    //   alert(`[error] ${error.message}`);
+    // };
+  });
+
+  // BX24.callMethod('user.current', {}, function(res){
+  //   console.log(res.data())
+  //   console.log(1)
+  //   window.appPullClient = new BX.PullClient({
+  //     restApplication: 'myApplication_test.bitrix24.ru',
+  //     restClient: BX24,
+  //     userId: res.data().ID
+  //   });
+  //   console.log(2)
+  //   window.appPullClient.subscribe({
+  //     moduleId: 'application',
+  //     callback: function (data) {
+  //       document.getElementById('result').innerText = data.params.param1
+  //       console.warn(data); // {command: '...', params: {...}, extra: {...}}
+  //     }.bind(this)
+  //   });
+  //   console.log(3)
+  //   window.appPullClient.start();
+  //   console.log(4)
+  //   BX24.callMethod('pull.application.config.get', {
+  //     'CACHE': 'Y',
+  //   }, function(result){
+  //     if(result.error())
+  //     {
+  //       console.error(result.error().ex);
+  //     }
+  //     else
+  //     {
+  //       console.log(result.data());
+  //     }
+  //   });
+  //   return res.data();
+  // });
+
+
+
+</script>
+</body>
+</html>
